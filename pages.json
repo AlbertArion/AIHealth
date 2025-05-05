@@ -1,0 +1,592 @@
+{
+	"pages": [ // 主包页面
+		{
+			"path": "pages/chatai/dialog",
+			"style": {
+				// #ifndef APP-PLUS
+				"enablePullDownRefresh": false,
+				// #endif
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/records/records",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#F6F6F6",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/device/device",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#F6F6F6"
+			}
+		},
+		{
+			"path": "pages/monitor/healthmonitor",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"backgroundColor": "#F6F6F6"
+			}
+		},
+		{
+			"path": "pages/ucenter/ucenter",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/uni-agree/uni-agree",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"popGesture": "none"
+				}
+			}
+		}, {
+			"path": "pages/ucenter/settings/settings",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/ucenter/read-news-log/read-news-log",
+			"style": {
+				"navigationBarTitleText": "阅读记录",
+				"enablePullDownRefresh": true
+			}
+		}
+		// #ifdef APP-PLUS
+		, {
+			"path": "pages/ucenter/about/about",
+			"style": {
+				"navigationBarTitleText": "关于",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		},
+		{
+			"path": "pages/ucenter/invite/invite",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		// #endif
+		{
+			"path": "pages/records/newrecord",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "uni_modules/uni-pay/pages/success/success",
+			"style": {
+				"backgroundColor": "#F8F8F8",
+				"navigationBarTitleText": "支付成功"
+			}
+		},
+		{
+			"path": "uni_modules/uni-pay/pages/ad-interactive-webview/ad-interactive-webview",
+			"style": {
+				"backgroundColor": "#F8F8F8",
+				"navigationBarTitleText": "ad"
+			}
+		},
+		{
+			"path": "pages/pay/moneypay",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/pay/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/pay/scorepay",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/uni-agree/privatepolicy",
+			"style": {
+				"navigationBarTitleText": "心脉AI隐私政策概要",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/uni-agree/useragreement",
+			"style": {
+				"navigationBarTitleText": "「心脉AI」用户协议",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/monitor/feelingmonitor",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F1C96A",
+				"backgroundColor": "#f6f6f6"
+			}
+		},
+		{
+			"path": "pages/monitor/stepmonitor",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0088BB",
+				"backgroundColor": "#f6f6f6"
+			}
+		},
+		{
+			"path": "pages/monitor/eatmonitor",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#5EC29C",
+				"backgroundColor": "#f6f6f6"
+			}
+		},
+		{
+			"path": "pages/monitor/sleepmonitor",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#7C4B75",
+				"backgroundColor": "#f6f6f6"
+			}
+		},
+		{
+			"path": "pages/monitor/pulsemonitor",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#aa3311",
+				"backgroundColor": "#f6f6f6"
+			}
+		},
+		{
+			"path": "pages/records/report",
+			"style": {
+				"navigationBarTitleText": "",
+				"backgroundColor": "#ffffff"
+			}
+		},
+		{
+			"path": "pages/pay/aipay",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/popup/popup-image",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/pay/productpay",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#F6F6F6",
+				"backgroundColor": "#f6f6f6"
+			}
+		}
+	],
+	"subPackages": [ // 分包，减小包体积
+		{
+			"root": "modules/inquiry",
+			"pages": [ // inquiry模块中的页面
+				{
+					"path": "pages/index",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/feedback",
+			"pages": [ // feedback模块中的页面
+				{
+					"path": "pages/feedback",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/records",
+			"pages": [ // records模块中的页面
+				{
+					"path": "pages/healthtips",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/ecenter",
+			"pages": [ // ecenter模块中的页面
+				{
+					"path": "pages/ecenter",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/admin",
+			"pages": [ // admin模块中的页面
+				{
+					"path": "pages/adminhealthreport",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/healthcomment",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "pages/healthcommentai",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/reportdetail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/followup",
+			"pages": [ // followup模块中的页面
+				{
+					"path": "pages/index",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/checkin",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/emochat",
+			"pages": [ // emochat模块中的页面
+				{
+					"path": "pages/index",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/health",
+			"pages": [ // health模块中的页面
+				{
+					"path": "pages/healthreport",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/jsonization",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				}
+			]
+		},
+		{
+			"root": "modules/device",
+			"pages": [ // device模块中的页面
+				{
+					"path": "pages/device",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/service",
+					"style": {
+						"navigationBarTitleText": ""
+						
+					}
+				},
+				{
+					"path": "pages/binddevice",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/myproducts",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/productorder",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F6F6F6"
+					}
+				},
+				{
+					"path": "pages/guidance",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				}
+			]
+		},
+		{
+			"root": "uni_modules/uni-feedback",
+			"pages": [{
+				"path": "pages/opendb-feedback/opendb-feedback",
+				"style": {
+					"navigationBarTitleText": "意见反馈",
+					"enablePullDownRefresh": false
+				}
+			}]
+		},
+		{
+			"root": "uni_modules/uni-id-pages/pages",
+			"pages": [{
+					"path": "userinfo/userinfo",
+					"style": {
+						"navigationBarTitleText": "个人资料"
+					}
+				},
+				{
+					"path": "userinfo/realname-verify/realname-verify",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationBarTitleText": "实名认证"
+					}
+				},
+				{
+					"path": "login/login-withoutpwd"
+				},
+				{
+					"path": "login/login-withpwd"
+				},
+				{
+					"path": "userinfo/deactivate/deactivate",
+					"style": {
+						"navigationBarTitleText": "注销账号"
+					}
+				},
+				{
+					"path": "userinfo/bind-mobile/bind-mobile",
+					"style": {
+						"navigationBarTitleText": "绑定手机号码"
+					}
+				},
+				{
+					"path": "login/login-smscode",
+					"style": {
+						"navigationBarTitleText": "手机验证码登录"
+					}
+				},
+				{
+					"path": "register/register",
+					"style": {
+						"navigationBarTitleText": "注册"
+					}
+				},
+				{
+					"path": "retrieve/retrieve",
+					"style": {
+						"navigationBarTitleText": "重置密码"
+					}
+				}, {
+					"path": "common/webview/webview",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationBarTitleText": ""
+					}
+				}, {
+					"path": "userinfo/change_pwd/change_pwd",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationBarTitleText": "修改密码"
+					}
+				}, {
+					"path": "register/register-by-email",
+					"style": {
+						"navigationBarTitleText": "邮箱验证码注册"
+					}
+				}, {
+					"path": "retrieve/retrieve-by-email",
+					"style": {
+						"navigationBarTitleText": "通过邮箱重置密码"
+					}
+				},
+				{
+					"path": "userinfo/set-pwd/set-pwd",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationBarTitleText": "设置密码"
+					}
+				}
+				// #ifdef H5
+				,
+				{
+					"path": "userinfo/cropImage/cropImage"
+				},
+				{
+					"path": "register/register-admin",
+					"style": {
+						"enablePullDownRefresh": false,
+						"navigationBarTitleText": "注册管理员账号"
+					}
+				}
+				// #endif
+			]
+		}
+	],
+	"requiredPrivateInfos": [
+		"chooseAddress"
+	],
+	"globalStyle": {
+		// #ifdef H5
+		"h5": {
+			"titleNView": false
+		},
+		// #endif
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"enablePullDownRefresh": false,
+		// "maxWidth":375,
+		"rpxCalcMaxDeviceWidth": 375,
+		"rpxCalcBaseDeviceWidth": 375,
+		// "rpxCalcIncludeWidth":0,
+		"backgroundColor": "#FFFFFF"
+	},
+	"condition": {
+		"list": [{
+			"path": "pages/chatai/dialog"
+		}],
+		"current": 1
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#00BFDE",
+		"backgroundColor": "#4C5382",
+		"fontSize": "12px",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/chatai/dialog",
+				"iconPath": "static/tabbar/icon_health_x.png",
+				"selectedIconPath": "static/tabbar/icon_health_x_active.png",
+				"text": "AI问答"
+			},
+			{
+				"pagePath": "pages/device/device",
+				"iconPath": "static/tabbar/icon_health_device.png",
+				"selectedIconPath": "static/tabbar/icon_health_device_active.png",
+				"text": "健康管理"
+			},
+			{
+				"pagePath": "pages/monitor/healthmonitor",
+				"iconPath": "static/tabbar/icon_health.png",
+				"selectedIconPath": "static/tabbar/icon_health_active.png",
+				"text": "我的健康"
+			},
+			{
+				"pagePath": "pages/records/records",
+				"iconPath": "static/tabbar/icon_health_records.png",
+				"selectedIconPath": "static/tabbar/icon_health_records_active.png",
+				"text": "报告解读"
+			},
+			{
+				"pagePath": "pages/ucenter/ucenter",
+				"iconPath": "static/tabbar/icon_health_mine.png",
+				"selectedIconPath": "static/tabbar/icon_health_mine_active.png",
+				"text": "个人信息"
+			}
+		]
+	},
+	"uniIdRouter": {
+		"loginPage": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+		"needLogin": [
+			"/uni_modules/uni-id-pages/pages/userinfo/userinfo"
+		],
+		"resToLogin": true
+	}
+}

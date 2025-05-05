@@ -1,0 +1,59 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"uid": {
+			"description": "用户ID",
+			"bsonType": "string"
+		},
+		"nickname": {
+			"description": "用户昵称",
+			"bsonType": "string"
+		},
+		"cid": {
+			"description": "医生/AI ID",
+			"bsonType": "string"
+		},
+		"rid": {
+			"description": "record ID",
+			"bsonType": "string"
+		},
+		"fileUrl": {
+			"description": "record fileUrl",
+			"bsonType": "string"
+		},
+		"content": {
+			"description": "消息内容",
+			"bsonType": "string"
+		},
+		"accept": {
+			"description": "用户认同",
+			"bsonType": "bool"
+		},
+		"timestamp": {
+			"bsonType": "timestamp",
+			"description": "健康建议时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"comments": {
+			"description": "追问及回答",
+			"bsonType": "array"
+		},
+		"type": {
+			"description": "消息类型", // AI, Else
+			"bsonType": "string"
+		}
+	}
+}

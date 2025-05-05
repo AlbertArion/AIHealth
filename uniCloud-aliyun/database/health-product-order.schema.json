@@ -1,0 +1,100 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"uid": {
+			"bsonType": "string",
+			"description": "订单所属的用户ID"
+		},
+		"sid": {
+			"bsonType": "string",
+			"description": "SensorID"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "产品名称"
+		},
+		"deviceName": {
+			"bsonType": "string",
+			"description": "设备名称" // 全局唯一
+		},
+		"type": {
+			"bsonType": "string",
+			"description": "产品类型" // sleepBelt:监测带 | cardioCare:心脏健康管理
+		},
+		"orderId": {
+			"bsonType": "string",
+			"description": "支付订单ID"
+		},
+		"finalOrderId": {
+			"bsonType": "string",
+			"description": "尾款支付订单ID"
+		},
+		"createDate": {
+			"bsonType": "timestamp",
+			"description": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"timestamp": {
+			"bsonType": "string",
+			"description": "全款交付时间"
+		},
+		"serviceStart": {
+			"bsonType": "string",
+			"description": "服务起始时间"
+		},
+		"fee": {
+			"bsonType": "double",
+			"description": "已付款/元"
+		},
+		"scoreCost": {
+			"bsonType": "int",
+			"description": "抵扣积分/分"
+		},
+		"price": {
+			"bsonType": "double",
+			"description": "产品单价/元"
+		},
+		"amount": {
+			"bsonType": "int",
+			"description": "产品数量"
+		},
+		"state": {
+			"bsonType": "int",
+			"description": "状态：-1: 未购买/已退款 | 0: 已预订 | 1: 已购买 | 2: 退款中 | 3: 已绑定"
+		},
+		"freightId": {
+			"bsonType": "string",
+			"description": "快递编号"
+		},
+		"address": {
+			"bsonType": "object",
+			"description": "收件地址"
+			/**
+			 * 格式如下：
+			 * {
+				 cityName: "广州市",
+				 countyName: "海珠区",
+				 detailInfo: "新港中路397号",
+				 nationalCode: "510000",
+				 postalCode: "510000",
+				 provinceName: "广东省",
+				 telNumber: "020-81167888",
+				 username: "张三"
+			 * }
+			 */
+		}
+	}
+}

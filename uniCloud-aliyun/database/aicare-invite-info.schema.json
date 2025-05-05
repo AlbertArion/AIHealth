@@ -1,0 +1,36 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"uid": {
+			"bsonType": "string",
+			"description": "注册用户UID"
+		},
+		"inviter_uid": {
+			"bsonType": "string",
+			"description": "邀请人UID"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "反馈时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"is_del": {
+			"bsonType": "int",
+			"description": "是否删除",
+			"defaultValue": 0
+		}
+	},
+	"version": "0.0.1"
+}

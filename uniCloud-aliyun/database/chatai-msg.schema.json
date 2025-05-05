@@ -1,0 +1,70 @@
+{
+	"bsonType": "object",
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"uid": {
+			"bsonType": "string",
+			"description": "消息发送方 UserID（用于指定发送消息帐号）"
+		},
+		"did": {
+			"bsonType": "string",
+			"description": "消息发送方 DeviceID（用于指定发送消息设备）"
+		},
+		"nickname": {
+			"description": "用户昵称",
+			"bsonType": "string"
+		},
+		"message": {
+			"description": "消息内容",
+			"bsonType": "string"
+		},
+		"ai_message": {
+			"description": "ai消息内容",
+			"bsonType": "string"
+		},
+		"approve": {
+			"description": "点赞",
+			"bsonType": "bool",
+			"defaultValue": false
+		},
+		"disapprove": {
+			"description": "点踩",
+			"bsonType": "bool",
+			"defaultValue": false
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "消息发送时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"is_del": {
+			"bsonType": "int",
+			"description": "是否删除",
+			"defaultValue": 0
+		},
+		"message_type": {
+			"bsonType": "int",
+			"description": "消息",
+			"defaultValue": 1 // 1: 文字 2: 文件
+		},
+		"filename": {
+			"description": "文件名",
+			"bsonType": "string"
+		},
+		"url": {
+			"description": "资源链接",
+			"bsonType": "string"
+		}
+	},
+	"version": "0.0.1"
+}

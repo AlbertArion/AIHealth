@@ -1,0 +1,35 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"uid": {
+			"bsonType": "string",
+			"description": "反馈发送方 UserID（用于指定反馈方帐号）"
+		},
+		"nickname": {
+			"description": "用户昵称",
+			"bsonType": "string"
+		},
+		"feedback": {
+			"description": "反馈内容",
+			"bsonType": "string"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "反馈时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+	},
+	"version": "0.0.1"
+}

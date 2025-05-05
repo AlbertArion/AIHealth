@@ -1,0 +1,93 @@
+{
+	"id": "uni-starter",
+	"displayName": "心脉AI",
+	"version": "2024.3.15.1",
+	"description": "AI家庭健康助手",
+	"keywords": [
+		"AI健康助手",
+		"健康可视化",
+		"探索式AI",
+		"智能对话",
+		"智能问答",
+		"健康管理",
+		"报告解读"
+	],
+	"repository": "https://gitcode.net/dcloud/uni-starter",
+	"engines": {
+		"HBuilderX": "^3.2.6"
+	},
+	"dcloudext": {
+		"sale": {
+			"regular": {
+				"price": "0.00"
+			},
+			"sourcecode": {
+				"price": "0.00"
+			}
+		},
+		"contact": {
+			"qq": ""
+		},
+		"declaration": {
+			"ads": "无",
+			"data": "无",
+			"permissions": "无"
+		},
+		"npmurl": "",
+		"type": "unicloud-template-project"
+	},
+	"uni_modules": {
+		"dependencies": [
+			"uni-id-pages"
+		],
+		"encrypt": [],
+		"platforms": {
+			"cloud": {
+				"tcb": "y",
+				"aliyun": "y"
+			},
+			"client": {
+				"App": {
+					"app-vue": "y",
+					"app-nvue": "u"
+				},
+				"H5-mobile": {
+					"Safari": "u",
+					"Android Browser": "u",
+					"微信浏览器(Android)": "u",
+					"QQ浏览器(Android)": "u"
+				},
+				"H5-pc": {
+					"Chrome": "y",
+					"IE": "n",
+					"Edge": "u",
+					"Firefox": "u",
+					"Safari": "u"
+				},
+				"小程序": {
+					"微信": "y",
+					"阿里": "u",
+					"百度": "u",
+					"字节跳动": "u",
+					"QQ": "u",
+					"京东": "u"
+				},
+				"快应用": {
+					"华为": "u",
+					"联盟": "u"
+				},
+				"Vue": {
+					"vue2": "y",
+					"vue3": "y"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"buffer": "^6.0.3",
+		"crypto": "^1.0.1",
+		"js-md5": "^0.8.3",
+		"qrcodejs2": "^0.0.2",
+		"ucharts": "^0.0.0"
+	}
+}

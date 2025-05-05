@@ -1,0 +1,66 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"userGroup": {
+			"bsonType": "array",
+			"description": "使用该产品的用户ID数组"
+		},
+		"sid": {
+			"bsonType": "string",
+			"description": "传感器sensorID"
+		},
+		"shareOpen": {
+			"bsonType": "bool",
+			"description": "设备开放共享"
+		},
+		"product": {
+			"bsonType": "object",
+			"description": "产品详情JSON"
+			/**
+			 * JSON详情：
+			{
+				"type": "sleepBelt",
+				"name": "心肺+睡眠智能监测仪",
+				"price": "1139",
+				"amount": 1,
+				"state": 3,
+				"serviceStart": "1725930000000",
+				"serviceEnd": "1757466000000",
+				"device": {
+					"deviceId": "DC:54:75:F2:AD:B5",
+					"name": "SSK_A01C3Z",
+					"RSSI": -34,
+					"connectable": true,
+					"advertisData": {},
+					"advertisServiceUUIDs": [
+						"0000180D-0000-1000-8000-00805F9B34FB"
+					],
+					"localName": "SSK_A01C3Z",
+					"serviceData": {},
+					"sensorID": "533331360000B4ADF27554DC_1"
+				},
+				"wifi": {
+					"SSID": "llxxzz",
+					"BSSID": "fc:d7:33:90:d0:56",
+					"signalStrength": 99,
+					"frequency": 2462,
+					"connected": 1,
+					"password": "ZhongLRX20120709",
+					"enctype": "GBK"
+				}
+			}
+			*/
+		}
+	}
+}

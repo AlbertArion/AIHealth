@@ -1,0 +1,103 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"uid": {
+			"bsonType": "string",
+			"description": "用户ID"
+		},
+		"nickname": {
+			"description": "用户昵称",
+			"bsonType": "string"
+		},
+		"avatar": {
+			"description": "用户头像",
+			"bsonType": "string"
+		},
+		"fileUrl": {
+			"description": "检查报告路径",
+			"bsonType": "string"
+		},
+		"filename": {
+			"description": "检查报告文件名",
+			"bsonType": "string"
+		},
+		"name": {
+			"description": "用户姓名",
+			"bsonType": "string"
+		},
+		"gender": {
+			"description": "用户性别",
+			"bsonType": "string"
+		},
+		"age": {
+			"description": "用户年龄",
+			"bsonType": "string"
+		},
+		"hospital": {
+			"description": "所在医院",
+			"bsonType": "string"
+		},
+		"content": {
+			"description": "病情描述",
+			"bsonType": "string"
+		},
+		"label": {
+			"description": "标签",
+			"bsonType": "string"
+		},
+		"timestamp": {
+			"bsonType": "timestamp",
+			"description": "检查结果时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"isPaid": {
+			"description": "是否支付",
+			"bsonType": "bool"
+		},
+		"isExpert": {
+			"description": "是否已获得专家建议",
+			"bsonType": "bool"
+		},
+		"paymentTime": {
+			"description": "付款时间",
+			"bsonType": "string"
+		},
+		"isPaidForAI": {
+			"description": "是否获取AI建议",
+			"bsonType": "bool"
+		},
+		"aiTips": {
+			"description": "AI报告解读结果",
+			"bsonType": "string"
+		},
+		"aiTipUpdate": {
+			"description": "AI报告解读更新",
+			"bsonType": "string"
+		},
+		"aiTipPrice": {
+			"description": "AI报告解读支付金额/元",
+			"bsonType": "double"
+		},
+		"aiComments": {
+			"description": "追问及回答",
+			"bsonType": "array"
+		},
+		"orderId": {
+			"description": "支付后订单ID",
+			"bsonType": "string"
+		}
+	},
+	"version": "0.0.1"
+}

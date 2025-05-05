@@ -1,0 +1,7 @@
+{
+  "name": "checkHttpToken",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

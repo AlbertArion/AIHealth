@@ -1,0 +1,92 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"timestamp": {
+			"bsonType": "timestamp",
+			"description": "时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"date": {
+			"bsonType": "string",
+			"description": "健康记录日期"
+		},
+		"uid": {
+			"description": "用户ID",
+			"bsonType": "string"
+		},
+		"did": {
+			"description": "设备ID: deviceId",
+			"bsonType": "string"
+		},
+		"eat": {
+			"description": "吃",
+			"bsonType": "string" // good, normal, bad
+		},
+		"steps": {
+			"description": "动",
+			"bsonType": "int" // 步数
+		},
+		"feelings": {
+			"description": "心",
+			"bsonType": "string" // good, normal, bad
+		},
+		"sleep": {
+			"description": "睡",
+			"bsonType": "string" // good, normal, bad
+		},
+		"sleepQuality": {
+			"description": "睡眠质量",
+			"bsonType": "object"
+		},
+		"pulse": {
+			"description": "心率",
+			"bsonType": "int"
+		},
+		"vo2max": {
+			"description": "最大摄氧量",
+			"bsonType": "int"
+		},
+		"score": {
+			"description": "健康指数",
+			"bsonType": "int"
+		},
+		"dataSource": {
+			"description": "数据来源",
+			"bsonType": "int",
+			"defaultValue": 0 // 0: 手机数据, 1: 智能监测带
+		},
+		"healthLevel": {
+			"description": "心脏健康等级",
+			"bsonType": "int" // 0: 非常健康, 1: 轻度风险, 2: 中度风险
+		},
+		"trendRisk": {
+			"description": "心率趋势风险",
+			"bsonType": "int" // 0: 非常健康, 1: 轻度风险, 2: 中度风险
+		},
+		"distRisk": {
+			"description": "心率分布风险",
+			"bsonType": "int" // 0: 非常健康, 1: 轻度风险, 2: 中度风险
+		},
+		"scatterRisk": {
+			"description": "心率散点风险",
+			"bsonType": "int" // 0: 非常健康, 1: 轻度风险, 2: 中度风险
+		},
+		"advice": {
+			"description": "医生建议",
+			"bsonType": "string"
+		}
+	}
+}

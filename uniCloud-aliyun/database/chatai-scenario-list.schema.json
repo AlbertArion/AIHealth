@@ -1,0 +1,83 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+/**
+ * 	场景对话列表：chatai-scenario-list(区别于无场景对话列表：chatai-dialog-list)。
+ * 	场景类型：
+ * 		1. 筛选患者：type = checkin
+ */
+{
+	"bsonType": "object",
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成，聊天ID"
+		},
+		"uid": {
+			"bsonType": "string",
+			"description": "消息发送方 UserID（用于指定发送消息帐号）"
+		},
+		"did": {
+			"bsonType": "string",
+			"description": "消息发送方 DeviceID（用于指定发送消息设备）"
+		},
+		"msg_id": {
+			"bsonType": "string",
+			"description": "关联消息ID"
+		},
+		"nickname": {
+			"description": "用户昵称",
+			"bsonType": "string"
+		},
+		"realname": {
+			"description": "正式姓名",
+			"bsonType": "string"
+		},
+		"doctor": {
+			"description": "医生",
+			"bsonType": "string"
+		},
+		"title": {
+			"description": "标题内容",
+			"bsonType": "string"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "消息发送时间戳",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"is_del": {
+			"bsonType": "int",
+			"description": "是否删除",
+			"defaultValue": 0
+		},
+		"is_finish": {
+			"bsonType": "int",
+			"description": "对话是否结束",
+			"defaultValue": 0
+		},
+		"summary": {
+			"description": "对话总结",
+			"bsonType": "string"
+		},
+		"num": {
+			"description": "对话索引",
+			"bsonType": "int",
+			"defaultValue": 0
+		},
+		"question_type": {
+			"description": "对话类型",
+			"bsonType": "string"
+		},
+		"type": {
+			"description": "场景类型",
+			"bsonType": "string"
+		}
+	},
+	"version": "0.0.1"
+}

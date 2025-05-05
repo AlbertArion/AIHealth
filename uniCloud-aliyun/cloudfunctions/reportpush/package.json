@@ -1,0 +1,26 @@
+{
+  "name": "reportpush",
+  "main": "index.js",
+  "version": "1.0.0",
+  "cloudfunction-config": {
+    "concurrency": 10,
+    "memorySize": 512,
+    "timeout": 600,
+    "runtime": "Nodejs12",
+    "triggers": [
+      {
+        "name": "myTrigger",
+        "type": "timer",
+        "config": "0 0 9 * * * *"
+      }
+    ],
+    "path": ""
+  },
+  "dependencies": {
+    "uni-subscribemsg": "file:../../../uni_modules/uni-subscribemsg/uniCloud/cloudfunctions/common/uni-subscribemsg",
+    "uni-id-common": "file:../../../uni_modules/uni-id-common/uniCloud/cloudfunctions/common/uni-id-common"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
